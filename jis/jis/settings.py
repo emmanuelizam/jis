@@ -25,7 +25,7 @@ SECRET_KEY = 'b5w0a)0&i)1bnrkn8uu8$6ra1)nah1)tklt&ja)lo!(t^_2f!1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["169.254.27.147", "192.168.43.71", "127.0.0.1"]
+ALLOWED_HOSTS = ["169.254.27.147", "192.168.43.71", "127.0.0.1", "http://www.sngvbd.pythonanywhere.com/"]
 
 
 # Application definition
