@@ -25,7 +25,7 @@ SECRET_KEY = 'b5w0a)0&i)1bnrkn8uu8$6ra1)nah1)tklt&ja)lo!(t^_2f!1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["169.254.27.147", "192.168.43.71", "127.0.0.1"]
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'jis_app'
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'jis.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "jis_app/templates/jis_app"),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
